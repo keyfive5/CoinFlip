@@ -19,7 +19,10 @@
       "adaptiveIcon": {
         "backgroundColor": "#0d0e12",
         "foregroundImage": "./assets/splash-icon.png"
-      }
+      },
+      "permissions": [
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -44,6 +47,11 @@
         }
       ]
     ],
-    "owner": "keyfive"
+    "owner": "keyfive",
+    "extra": {
+      "eas": {
+        "projectId": "82785038-51e3-47f2-9acc-a9e286eef4be"
+      }
+    }
   }
 }
