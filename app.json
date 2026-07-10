@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Coin Flip",
+    "slug": "coinflip",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0d0e12",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.hasanzafar.coinflip",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.hasanzafar.coinflip",
+      "adaptiveIcon": {
+        "backgroundColor": "#0d0e12",
+        "foregroundImage": "./assets/splash-icon.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "./plugins/withoutBackgroundAudio",
+      [
+        "expo-audio",
+        {
+          "microphonePermission": false,
+          "recordAudioAndroid": false,
+          "enableBackgroundPlayback": false
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#0d0e12"
+        }
+      ]
+    ],
+    "owner": "keyfive"
+  }
+}
